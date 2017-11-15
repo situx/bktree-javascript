@@ -1,0 +1,98 @@
+<html>
+<script src="js/bktree.js"></script>
+<script src="bktree/output.js"></script>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/webime.css" media="screen" />
+<script>
+window.onload = function() {
+  /*bktree=new BKTree()
+  for(i=0;i<records["records"].length;i++){
+    	bktree.add(records["records"][i]);
+  }
+  //alert(JSON.stringify(bktree))
+  //document.body.innerHTML = JSON.stringify(bktree);
+    output=JSON.stringify(bktree.search("ha-ba-",4))
+  output=JSON.stringify(searchTree(bktree,"ha-ba-",4))*/
+   
+};
+
+function sortByValue(jsObj){
+  	var sortedArray = [];
+  	for(var i in jsObj)
+  	{
+  		// Push each JSON Object entry in array by [value, key]
+		sortedArray.push([jsObj[i], jsObj[i]["distance"]]);
+	}
+	return sortedArray.sort();
+}
+
+function search(){
+	searchtext=document.getElementById("searchtext").value
+	if(searchtext==""){
+		document.getElementById("result").innerHTML=""
+		return
+	}
+	threshold=document.getElementById("threshold").value
+	alphsort=document.getElementById('myform')['sort'].value
+	limit=document.getElementById("limit").value
+	jsonresult=searchTree(bktree,searchtext,threshold)
+	//alert(JSON.stringify(jsonresult))
+	htmlresult="<ul>"
+	if(alphsort=="lexsort"){
+		keys = Object.keys(jsonresult)
+		var i, len = keys.length;
+		keys.sort();
+		for (i = 0; i < len; i++) {
+  			k = keys[i];
+			if(i<limit){
+				htmlresult+="<li>"+jsonresult[k]["term"]["transliteration"]+" ("+jsonresult[k]["term"]["script"]+") ";
+				if(jsonresult[k]["term"]["concept"]!=""){
+					htmlresult+="<a href=\""+jsonresult[k]["term"]["concept"]+"\">["+jsonresult[k]["term"]["translation"]+"]</a> ";
+				}else{
+					htmlresult+="["+jsonresult[k]["term"]["translation"]+"] ";
+				}
+				htmlresult+=jsonresult[k]["term"]["pos"]+" ("+jsonresult[k]["distance"]+")</li>"
+			}
+		}
+	}else{
+		var resultarray = sortByValue(jsonresult);
+			i=0;
+		for(k in resultarray){
+			if(i<limit){
+				//htmlresult+="<li>"+resultarray[k]+"("+k+")</li>"
+				htmlresult+="<li>"+resultarray[k][0]["term"]["transliteration"]+" ("+resultarray[k][0]["term"]["script"]+") ";
+				if(resultarray[k][0]["term"]["concept"]!=""){
+					htmlresult+="<a href=\""+resultarray[k][0]["term"]["concept"]+"\">["+resultarray[k][0]["term"]["translation"]+"]</a> ";
+				}else{
+					htmlresult+="["+resultarray[k][0]["term"]["translation"]+"] ";
+				}
+				htmlresult+=resultarray[k][0]["term"]["pos"]+" ("+resultarray[k][0]["distance"]+")</li>"
+			}
+			i++;
+		}
+	}
+
+
+
+	htmlresult+="</ul>"
+	document.getElementById("result").innerHTML=htmlresult
+};
+</script>
+<body><h1>Exported BKTree Test</h1></body>
+
+<form id="myform">
+Search input: <input type="text" id="searchtext" onkeyup="search()"/><br/>
+Threshold: <input type="number" id="threshold" min="0" value="2" onchange="search()"/><br/>
+Result Limit: <input type="number" id="limit" min="1" value="5" onchange="search()"/><br/>
+<fieldset id="radiobuttons">
+	<legend>Sorting of the results</legend>
+    <input type="radio" id="lexsort" name="sort" value="lexsort" checked="checked">
+    <label for="lexsort">Lexicographic Sort</label> 
+    <input type="radio" id="distsort" name="sort" value="distsort">
+    <label for="distsort">Distance Sort</label> 
+  </fieldset>
+<div id="result">
+
+</div>
+</form>
+</html>

@@ -1,0 +1,51 @@
+body {background: #1C1B1C;}
+body, textarea {font-size: 18px; font-family: 'open sans', arial, sans-serif; color:white;}
+a {color: blue;}
+span{color:white;}
+h1 {color: white; margin: 0; padding: 0;  font-weight: bold; font-size: 36px; text-align: center; text-shadow: 2px 2px 0 rgba(0,0,0,0.5);}
+h2 {color: #ffe35d; margin: 0; padding: 0; font-weight: bold; font-size: 18px; text-align: right; text-shadow: 2px 2px 0 rgba(0,0,0,0.5);}
+li {color: lightgray; font-family:akkadian;}
+textarea.chinese {width: 410px; height: 200px; border: 5px solid #aaa; padding: 10px;}
+
+.header {width: 400px; margin: 50px auto;}
+.container {display: block; width: 410px; margin: 50px auto 0;}
+.footer { padding-bottom: 100px; position: relative; font-family: 'open sans', sans-serif; margin-top: 50px; text-align: center; color: white; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);}
+.footer .attribution {position: absolute; bottom: 10px; right: 10px; font-size: 12px; }
+.footer .attribution a {color: blue;}
+.footer .attribution img {width: 20px; margin: 0 10px; float: left; border: 2px solid white; box-shadow: 2px 2px 1px rgba(0,0,0,0.7); -moz-box-shadow: 2px 2px 1px rgba(0,0,0,0.7);}
+@font-face {
+  font-family: 'akkadian';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('../fonts/Akkadian.ttf');
+}
+@font-face {
+  font-family: 'hittite';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('../fonts/Akkadian.ttf');
+}
+@font-face {
+  font-family: 'elamite';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('../fonts/Akkadian.ttf');
+}
+@font-face {
+  font-family: 'luwiancunei';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('../fonts/Akkadian.ttf');
+}
+@font-face {
+  font-family: 'sumerian';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('../fonts/Akkadian.ttf');
+}
+@font-face {
+  font-family: 'egyptian';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('../fonts/Gardiner.ttf');
+}

@@ -1,8 +1,6 @@
 /**
 	@module BKTree
-
 	Inspired by https://github.com/threedaymonk/bktree
-
 	See http://blog.notdot.net/archives/30-Damn-Cool-Algorithms,-Part-1-BK-Trees.html
 	and http://www.dcc.uchile.cl/~gnavarro/ps/spire98.2.ps.gz
 */
@@ -90,15 +88,29 @@ var BKTreeNode = function(term) {
 	this.children = new Object();
 };
 
+BKTreeNode.prototype.add2 = function(term,scoree) {
+	//var score = levenshtein(term["transliteration"], this.term["transliteration"]);
+	alert("Score: "+scoree)
+	// If the term is already in the tree 
+	if (scoree === 0) return false;
+
+	var child = this.children[scoree];
+	if (child)
+		return child.add(term);
+
+	this.children[scoree] = new BKTreeNode(term);
+
+	return true;
+};
+
 /**
 	Add a term in the BK-Tree
-
 	@method add
 	@param {String} term
 	@return {Boolean} true if the term was correctly added
 */
 BKTreeNode.prototype.add = function(term) {
-	var score = levenshtein(term, this.term);
+	var score = levenshtein(term["transliteration"], this.term["transliteration"]);
 
 	// If the term is already in the tree 
 	if (score === 0) return false;
@@ -112,18 +124,21 @@ BKTreeNode.prototype.add = function(term) {
 	return true;
 };
 
+
+
+
 /**
 	Search a term in the BK-Tree
-
 	@method search
 	@param {String} term
 	@param {Number} threshold The search threshold
 	@param {Object} collected The hashmap of collected terms
 */
 BKTreeNode.prototype.search = function(term, threshold, collected) {
-	var distance_at_BKTreeNode = levenshtein(term, this.term);
-	if (distance_at_BKTreeNode <= threshold)
-		collected[this.term] = distance_at_BKTreeNode;
+	var distance_at_BKTreeNode = levenshtein(term, this.term["transliteration"]);
+	if (distance_at_BKTreeNode <= threshold){
+		collected[this.term["transliteration"]] = distance_at_BKTreeNode;
+	}
 
 	for (var d = -threshold; d <= threshold; ++d) {
 		var child = this.children[distance_at_BKTreeNode + d];
@@ -134,7 +149,6 @@ BKTreeNode.prototype.search = function(term, threshold, collected) {
 
 /**
 	BKTree
-
 	@class BKTree
 	@constructor
 */
@@ -144,7 +158,6 @@ var BKTree = function() {
 
 /**
 	Add a term in the BK-Tree
-
 	@method add
 	@param {String} term
 	@return {Boolean} true if the term was correctly added
@@ -156,8 +169,20 @@ BKTree.prototype.add = function(term) {
 };	
 
 /**
-	Add a term in the BK-Tree after the initialization.
+Add a term in the BK-Tree
+@method add
+@param {String} term
+@return {Boolean} true if the term was correctly added
+*/
+BKTree.prototype.add2 = function(term,score) {
+this.root = new BKTreeNode(term);
+this.add2 = BKTree.prototype._add_with_root2;
+return true;
+};	
 
+
+/**
+	Add a term in the BK-Tree after the initialization.
 	@method add
 	@protected
 	@param {String} term
@@ -168,8 +193,18 @@ BKTree.prototype._add_with_root = function(term) {
 };
 
 /**
-	Search a term in the BK-Tree
+Add a term in the BK-Tree after the initialization.
+@method add
+@protected
+@param {String} term
+@return {Boolean} true if the term was correctly added
+*/
+BKTree.prototype._add_with_root2 = function(term,score) {
+return this.root.add2(term,score);
+};
 
+/**
+	Search a term in the BK-Tree
 	@method search
 	@param {String} term
 	@param {Number} threshold The search threshold
@@ -186,7 +221,6 @@ BKTree.prototype.search = function(term, threshold) {
 
 /**
 	Add a list of terms in the BK-Tree.
-
 	@method addList
 	@param {Array} terms
 */
@@ -206,4 +240,30 @@ BKTree.prototype.addList = function(list) {
 
 	for (var i = 0; i < list.length; ++i)
 		this.add(list[i]);
+};
+
+
+function searchTree(tree,term,threshold){
+	if (typeof threshold === 'undefined')
+		threshold = 2;
+
+	var collected = {};
+	searchTerms(tree["root"],term, threshold, collected);
+	return collected;
+};
+
+function searchTerms(treenode,term, threshold, collected) {
+	var distance_at_BKTreeNode = levenshtein(term, treenode.term["transliteration"]);
+	if (distance_at_BKTreeNode <= threshold){
+		obj={}
+		obj["term"]=treenode.term;
+		obj["distance"]=distance_at_BKTreeNode;
+		collected[treenode.term["transliteration"]] = obj;
+	}
+
+	for (var d = -threshold; d <= threshold; ++d) {
+		var child = treenode["children"][distance_at_BKTreeNode + d];
+		if (child)
+			searchTerms(child,term, threshold, collected);
+	}
 };
