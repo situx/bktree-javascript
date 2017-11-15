@@ -47,7 +47,7 @@ function search(){
 			if(i<limit){
 				htmlresult+="<li>"+jsonresult[k]["term"]["transliteration"]+" ("+jsonresult[k]["term"]["script"]+") ";
 				if(jsonresult[k]["term"]["concept"]!=""){
-					htmlresult+="<a href=\""+jsonresult[k]["term"]["concept"]+"\">["+jsonresult[k]["term"]["translation"]+"]</a> ";
+					htmlresult+="<a href=\""+jsonresult[k]["term"]["concept"]+"\" target=\"_blank\">["+jsonresult[k]["term"]["translation"]+"]</a> ";
 				}else{
 					htmlresult+="["+jsonresult[k]["term"]["translation"]+"] ";
 				}
@@ -62,7 +62,7 @@ function search(){
 				//htmlresult+="<li>"+resultarray[k]+"("+k+")</li>"
 				htmlresult+="<li>"+resultarray[k][0]["term"]["transliteration"]+" ("+resultarray[k][0]["term"]["script"]+") ";
 				if(resultarray[k][0]["term"]["concept"]!=""){
-					htmlresult+="<a href=\""+resultarray[k][0]["term"]["concept"]+"\">["+resultarray[k][0]["term"]["translation"]+"]</a> ";
+					htmlresult+="<a href=\""+resultarray[k][0]["term"]["concept"]+"\"  target=\"_blank\">["+resultarray[k][0]["term"]["translation"]+"]</a> ";
 				}else{
 					htmlresult+="["+resultarray[k][0]["term"]["translation"]+"] ";
 				}
