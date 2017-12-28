@@ -1,0 +1,663 @@
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://github.com/situx/ontology/cuneiform/word#????????????????????????_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "????????????????????????"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "bi-za-za-gu3-balaj-di-kar-gir5-za-na-muszen" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "????????????????????????" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#????????????????????????_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#Q259745>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q259745_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#(|×()|)((|×()|))_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q259745> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#(||)((||))_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "(||)((||))_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "33"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform/measurement#(|&amp;amp;|)((|&amp;amp;|))_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "(|&amp;amp;|)((|&amp;amp;|))_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "30"^^xsd:int , "29"^^xsd:int , "39"^^xsd:int .
+
+rdfs:seeAlso
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:subPropertyOf rdfs:seeAlso .
+
+<http://lemon-model.net/lemon#representation>
+      a       owl:DatatypeProperty .
+
+rdfs:comment
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:range rdfs:Literal .
+
+<https://github.com/situx/ontology/cuneiform/word#Q48422>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q48422_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#(||)((||))_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q48422> .
+
+<https://github.com/situx/ontology/cuneiform/word#()_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "()"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "sa12-sug5; sa12-su5[sagtildcap-ku]; sa2-sug5" , "sax" , "murgu2-[lum]- -ta" , "je26[gtildcapá]-nam-ma-da" , "kusz-lu-ub2-szir-ra..aka" , "iz-zi[gtildcapisz-zi]; iz-zi8[gtildcapisz-kal]" , "tigi [balagtildcap.nar]; ti2gi [nar.balagtildcap]" , "gala[gtildcapìsz.du2r]" , "gtildcapa2-nam-ma-da" , "lu2-sza13[gtildcapá]-dub-ba" , "al-gazumx [zum-lagab]" , "jeszeme-szu-ru-ug-jeszeme-szu-ru-ug" , "gtildcapisz-szar" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "()" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#()_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#????????????????????_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "????????????????????_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "43"^^xsd:int , "37"^^xsd:int .
+
+rdf:Seq
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdf:Seq , rdfs:Container .
+
+<https://github.com/situx/ontology/cuneiform/word#()(())_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "()(())"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "lu2-u18[gtildcapiszgal]-lu" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "()(())" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#()(())_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#??_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "sah"@en .
+
+rdfs:Literal
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdfs:Literal .
+
+<https://github.com/situx/ontology/cuneiform/word#())(()))_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "())(()))"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "szah22-bar-gu3n-gu3n-nu" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "())(()))" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#())(()))_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<http://lemon-model.net/lemon#entry>
+      a       owl:ObjectProperty .
+
+rdfs:subClassOf
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdfs:Class ;
+      rdfs:range rdfs:Class .
+
+rdf:type
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:range rdfs:Class .
+
+<http://lemon-model.net/lemon#writtenRep>
+      a       owl:DatatypeProperty .
+
+<https://github.com/situx/ontology/cuneiform/word#Q756>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q756_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#%(%)_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q756> .
+
+<http://purl.org/olia/ubyCat.owl#partOfSpeech>
+      a       owl:ObjectProperty .
+
+<https://github.com/situx/ontology/cuneiform#distance>
+      a       owl:ObjectProperty .
+
+<https://github.com/situx/ontology/cuneiform/word#(||)(||)((||)(||))_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "nijin-x|lal2.sar|-nijin-x|lal2.sar|-muszen"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q5113> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#((()_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "((()_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "16"^^xsd:int , "26"^^xsd:int .
+
+rdf:rest
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:List ;
+      rdfs:range rdf:List ;
+      rdfs:subPropertyOf rdf:rest .
+
+rdfs:range
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:Property ;
+      rdfs:range rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+      a       owl:ObjectProperty .
+
+<http://lemon-model.net/lemon#reference>
+      a       owl:ObjectProperty .
+
+<https://github.com/situx/ontology/cuneiform/measurement#())(()))_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "())(()))_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "21"^^xsd:int .
+
+<http://lemon-model.net/lemon#hasSense>
+      a       owl:ObjectProperty .
+
+<https://github.com/situx/ontology/cuneiform/word#%(%)_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "%(%)"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "jesz-hasz-hurud.gisz%gisz.nun" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "%(%)" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#%(%)_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#??????????????????_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "sze-er; sze-er-sze-er; sze-er-zi"@en .
+
+<NN>  a       <http://purl.org/olia/ubyCat.owl#PartOfSpeech> .
+
+<https://github.com/situx/ontology/cuneiform/>
+      a       <http://lemon-model.net/lemon#Lexicon> ;
+      <http://lemon-model.net/lemon#entry>
+              <https://github.com/situx/ontology/cuneiform/word#(||)((||))_word> , <https://github.com/situx/ontology/cuneiform/word#??????????????????_word> , <https://github.com/situx/ontology/cuneiform/word#()_word> , <https://github.com/situx/ontology/cuneiform/word#%(%)_word> , <https://github.com/situx/ontology/cuneiform/word#????????????????????_word> , <https://github.com/situx/ontology/cuneiform/word#????????????????????????_word> , <https://github.com/situx/ontology/cuneiform/word#(||)(||)((||)(||))_word> , <https://github.com/situx/ontology/cuneiform/word#_word> , <https://github.com/situx/ontology/cuneiform/word#(|×()|)((|×()|))_word> , <https://github.com/situx/ontology/cuneiform/word#(|&amp;amp;|)((|&amp;amp;|))_word> , <https://github.com/situx/ontology/cuneiform/word#())(()))_word> , <https://github.com/situx/ontology/cuneiform/word#()(())_word> , <https://github.com/situx/ontology/cuneiform/word#?š??????????????_word> , <https://github.com/situx/ontology/cuneiform/word#??_word> , <https://github.com/situx/ontology/cuneiform/word#((()_word> , <https://github.com/situx/ontology/cuneiform/word#(()((())_word> .
+
+<https://github.com/situx/ontology/cuneiform/word#????????????????????_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "szir3-ra-nam-en-na; szir3-re-nam-nir-ra"@en , "u5-bi2-muszen; u2-bi2-muszen; ub-bi3-muszen"@en .
+
+<https://github.com/situx/ontology/cuneiform/word#????????????????????_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "????????????????????"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "szir3-ra-nam-en-na; szir3-re-nam-nir-ra" , "u5-bi2-muszen; u2-bi2-muszen; ub-bi3-muszen" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "????????????????????" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#????????????????????_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#Q758780>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q758780_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#(()((())_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q758780> .
+
+<https://github.com/situx/ontology/cuneiform/word#(|×()|)((|×()|))_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "emejar-jar-x|ka×me.gar.gar.ra|"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q259745> .
+
+<https://github.com/situx/ontology/cuneiform/word#(|&amp;amp;|)((|&amp;amp;|))_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "erin-x|musz&amp;amp;musz|-na-ku6"@en , "da-gi4-lum-x|zu&amp;amp;zu.sar|"@en , "jesz-nij2-men-bulug2|bulug&amp;amp;bulug|"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q17147> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#??????????????????_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "??????????????????_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "32"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform/word#(()((())_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "(()((())"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "nu-jisz-kiri6-k" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "(()((())" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#(()((())_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+rdfs:domain
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:Property ;
+      rdfs:range rdfs:Class .
+
+rdf:first
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:List ;
+      rdfs:subPropertyOf rdf:first .
+
+<https://github.com/situx/ontology/cuneiform/measurement#(|×()|)((|×()|))_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "(|×()|)((|×()|))_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "28"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform/measurement#()(())_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "()(())_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "24"^^xsd:int .
+
+<https://www.wikidata.org/wiki/Q5113>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+<https://github.com/situx/ontology/cuneiform/word#(||)((||))_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "eren-gur-x|sze.sze.kin|-si-muszen"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q48422> .
+
+<https://www.wikidata.org/wiki/Q48422>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+owl:Class
+      a       rdfs:Resource , rdfs:Class .
+
+rdf:List
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdf:List .
+
+rdfs:ContainerMembershipProperty
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdf:Property , rdfs:ContainerMembershipProperty .
+
+<https://github.com/situx/ontology/cuneiform/word#_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "buru7[gurun]"@en , "dim2[gim]"@en , "burud-x"@en , "iti6[ud.dnanna]"@en , "didi"@en , "bag[hu]"@en , "aah"@en , "bara4[bad]"@en , "ar2[ub]"@en , "bir3[erim]"@en , "gi25[dugud]"@en , "gial"@en .
+
+<https://www.wikidata.org/wiki/Q758780>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+<http://www.w3.org/ns/dqv#QualityMeasurement>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/word#?š??????????????_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "jeszeme-szu-ru-ug-eme-szu-ru-ug"@en .
+
+rdfs:Class
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdfs:Class .
+
+rdfs:Datatype
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdfs:Class , rdfs:Datatype .
+
+<https://github.com/situx/ontology/cuneiform/measurement#(||)(||)((||)(||))_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "(||)(||)((||)(||))_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "40"^^xsd:int .
+
+rdfs:subPropertyOf
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:Property ;
+      rdfs:range rdf:Property .
+
+rdf:Alt
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdf:Alt , rdfs:Container .
+
+owl:ObjectProperty
+      a       rdfs:Resource , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/measurement#????????????????????????_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "????????????????????????_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "41"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform#hasValue>
+      a       owl:DatatypeProperty .
+
+<https://github.com/situx/ontology/cuneiform/word#()_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "sax"@en , "sa12-sug5; sa12-su5[sagtildcap-ku]; sa2-sug5"@en , "murgu2-[lum]- -ta"@en , "je26[gtildcapá]-nam-ma-da"@en , "kusz-lu-ub2-szir-ra..aka"@en , "iz-zi[gtildcapisz-zi]; iz-zi8[gtildcapisz-kal]"@en , "tigi [balagtildcap.nar]; ti2gi [nar.balagtildcap]"@en , "gala[gtildcapìsz.du2r]"@en , "gtildcapa2-nam-ma-da"@en , "lu2-sza13[gtildcapá]-dub-ba"@en , "al-gazumx [zum-lagab]"@en , "jeszeme-szu-ru-ug-jeszeme-szu-ru-ug"@en , "gtildcapisz-szar"@en .
+
+<https://www.wikidata.org/wiki/Q756>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+<https://github.com/situx/ontology/cuneiform/word#????????????????????????_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "bi-za-za-gu3-balaj-di-kar-gir5-za-na-muszen"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q5113> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#()_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "()_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "25"^^xsd:int , "23"^^xsd:int , "22"^^xsd:int , "20"^^xsd:int , "19"^^xsd:int , "18"^^xsd:int , "17"^^xsd:int , "47"^^xsd:int , "14"^^xsd:int , "44"^^xsd:int , "42"^^xsd:int , "35"^^xsd:int , "2"^^xsd:int .
+
+<https://www.wikidata.org/wiki/Q259745>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+rdf:object
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:Statement ;
+      rdfs:subPropertyOf rdf:object .
+
+<https://www.wikidata.org/wiki/Q1223829>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+<https://github.com/situx/ontology/cuneiform/word#_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label ""@en ;
+      <http://lemon-model.net/lemon#representation>
+              "buru7[gurun]" , "dim2[gim]" , "didi" , "iti6[ud.dnanna]" , "burud-x" , "aah" , "bag[hu]" , "bara4[bad]" , "ar2[ub]" , "bir3[erim]" , "gial" , "gi25[dugud]" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<http://lemon-model.net/lemon#isSenseOf>
+      a       owl:ObjectProperty .
+
+<https://github.com/situx/ontology/cuneiform/word#%(%)_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "jesz-hasz-hurud.gisz%gisz.nun"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q756> .
+
+owl:DatatypeProperty
+      a       rdfs:Resource , rdfs:Class .
+
+rdfs:Resource
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource .
+
+<http://purl.org/olia/ubyCat.owl#PartOfSpeech>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+rdf:Property
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdf:Property .
+
+<http://lemon-model.net/lemon#LemonReference>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/word#(||)((||))_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "(||)((||))"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "eren-gur-x|sze.sze.kin|-si-muszen" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "(||)((||))" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#(||)((||))_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<http://lemon-model.net/lemon#isFormOf>
+      a       owl:ObjectProperty .
+
+<http://www.w3.org/ns/dqv#Metric>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#Metric> .
+
+<http://lemon-model.net/lemon#LexicalForm>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/word#(|&amp;amp;|)((|&amp;amp;|))_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "(|&amp;amp;|)((|&amp;amp;|))"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "erin-x|musz&amp;amp;musz|-na-ku6" , "da-gi4-lum-x|zu&amp;amp;zu.sar|" , "jesz-nij2-men-bulug2|bulug&amp;amp;bulug|" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "(|&amp;amp;|)((|&amp;amp;|))" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#(|&amp;amp;|)((|&amp;amp;|))_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<http://lemon-model.net/lemon#Lexicon>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/word#((()_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "((()"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "iti-sig4-jisz-i3-szub-ba-jar" , "kur-jisz-erin-na" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "((()" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#((()_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#()(())_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "lu2-u18[gtildcapiszgal]-lu"@en .
+
+rdfs:label
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:range rdfs:Literal .
+
+<https://github.com/situx/ontology/cuneiform/word#??_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "??"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "sah" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "??" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#??_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#(()((())_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "nu-jisz-kiri6-k"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q758780> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#?š??????????????_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "?š??????????????_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "31"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform/measurement#%(%)_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "%(%)_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "27"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform/measurement#??_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "??_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "1"^^xsd:int .
+
+rdfs:isDefinedBy
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:subPropertyOf rdfs:seeAlso , rdfs:isDefinedBy .
+
+<https://github.com/situx/ontology/cuneiform/measurement#_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "0"^^xsd:int , "13"^^xsd:int , "12"^^xsd:int , "11"^^xsd:int , "10"^^xsd:int , "9"^^xsd:int , "8"^^xsd:int , "7"^^xsd:int , "6"^^xsd:int , "5"^^xsd:int , "4"^^xsd:int , "3"^^xsd:int .
+
+<https://github.com/situx/ontology/cuneiform/word#(|×()|)((|×()|))_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "(|×()|)((|×()|))"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "emejar-jar-x|ka×me.gar.gar.ra|" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "(|×()|)((|×()|))" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#(|×()|)((|×()|))_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+rdf:Statement
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource , rdf:Statement .
+
+<http://lemon-model.net/lemon#distance>
+      a       owl:DatatypeProperty .
+
+rdfs:Container
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdfs:Container .
+
+()    a       rdfs:Resource , rdf:List .
+
+<https://github.com/situx/ontology/cuneiform/word#??????????????????_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "??????????????????"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "sze-er; sze-er-sze-er; sze-er-zi" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "??????????????????" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#??????????????????_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://github.com/situx/ontology/cuneiform/word#Q1223829>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q1223829_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#())(()))_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q1223829> .
+
+<http://lemon-model.net/lemon#Word>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/word#((()_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "iti-sig4-jisz-i3-szub-ba-jar"@en , "kur-jisz-erin-na"@en .
+
+<https://github.com/situx/ontology/cuneiform/word#Q17147>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q17147_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#(|&amp;amp;|)((|&amp;amp;|))_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q17147> .
+
+rdf:XMLLiteral
+      a       rdfs:Resource , rdfs:Class , rdfs:Datatype .
+
+<https://github.com/situx/ontology/cuneiform/word#?š??????????????_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "?š??????????????"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "jeszeme-szu-ru-ug-eme-szu-ru-ug" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "?š??????????????" ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#?š??????????????_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+rdf:predicate
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:Statement ;
+      rdfs:subPropertyOf rdf:predicate .
+
+<https://github.com/situx/ontology/cuneiform/word#(||)(||)((||)(||))_form>
+      a       <http://lemon-model.net/lemon#LexicalForm> ;
+      rdfs:label "(||)(||)((||)(||))"@en ;
+      <http://lemon-model.net/lemon#representation>
+              "nijin-x|lal2.sar|-nijin-x|lal2.sar|-muszen" ;
+      <http://lemon-model.net/lemon#writtenRep>
+              "(||)(||)((||)(||))" ;
+      <http://purl.org/olia/ubyCat.owl#partOfSpeech>
+              <NN> ;
+      <https://github.com/situx/ontology/cuneiform#distance>
+              <https://github.com/situx/ontology/cuneiform/measurement#(||)(||)((||)(||))_com.github.situx.webime.bktree.BKTreeExporter$1> .
+
+<https://www.wikidata.org/wiki/Q17147>
+      a       <http://lemon-model.net/lemon#LemonReference> .
+
+rdf:subject
+      a       rdfs:Resource , rdf:Property ;
+      rdfs:domain rdf:Statement ;
+      rdfs:subPropertyOf rdf:subject .
+
+<https://github.com/situx/ontology/cuneiform/word#())(()))_word>
+      a       <http://lemon-model.net/lemon#Word> ;
+      rdfs:label "szah22-bar-gu3n-gu3n-nu"@en ;
+      <http://lemon-model.net/lemon#hasSense>
+              <https://github.com/situx/ontology/cuneiform/word#Q1223829> .
+
+<https://github.com/situx/ontology/cuneiform/measurement#(()((())_com.github.situx.webime.bktree.BKTreeExporter$1>
+      a       <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+      rdfs:label "(()((())_com.github.situx.webime.bktree.BKTreeExporter$1"@en ;
+      <https://github.com/situx/ontology/cuneiform#hasQualityMetric>
+              <https://github.com/situx/ontology/cuneiform#com.github.situx.webime.bktree.BKTreeExporter$1> ;
+      <https://github.com/situx/ontology/cuneiform#hasValue>
+              "15"^^xsd:int .
+
+rdf:Bag
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:subClassOf rdf:Bag , rdfs:Container .
+
+<http://lemon-model.net/lemon#LexicalSense>
+      a       rdfs:Resource , owl:Class , rdfs:Class .
+
+<https://github.com/situx/ontology/cuneiform/word#Q5113>
+      a       <http://lemon-model.net/lemon#LexicalSense> ;
+      rdfs:label "Q5113_sense"@en ;
+      <http://lemon-model.net/lemon#isSenseOf>
+              <https://github.com/situx/ontology/cuneiform/word#????????????????????????_word> , <https://github.com/situx/ontology/cuneiform/word#(||)(||)((||)(||))_word> ;
+      <http://lemon-model.net/lemon#reference>
+              <https://www.wikidata.org/wiki/Q5113> .
