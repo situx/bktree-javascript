@@ -1,6 +1,8 @@
 WebIME implementation using a preexported BKTree
 =================
 
+[![Build Status](https://travis-ci.com/situx/webime-bktree.svg?branch=master)](https://travis-ci.com/situx/webime-bktree)
+
 This repository includes code by yellowiscool/bktree-javascript. It has been modified to accept a preexported BKTree in JSON in order not to precalculate the BKTree on the fly on the homepage.
 
 The code to export the BKTree has been included as well.
